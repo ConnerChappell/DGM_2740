@@ -33,7 +33,7 @@ header h2 {
 }
 
 /* Navigation Rules */
-nav {
+.nav-wrapper {
     background-color: #000;
 }
 nav ul {
