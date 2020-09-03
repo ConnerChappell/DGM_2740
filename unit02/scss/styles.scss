@@ -1,0 +1,15 @@
+@import "normalize";
+
+@import "variables";
+
+@import "small";
+
+@media only screen and (min-width: 560px) {
+    @import "medium";
+}
+/* End of Media Query */
+
+@media only screen and (min-width: 1028px) {
+    @import "large";
+}
+/* End of Media Query */

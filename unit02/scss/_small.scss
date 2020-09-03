@@ -6,31 +6,31 @@
 
 /* Body Rules */
 body {
-    font-family: Verdana;
+    font-family: $fontFamily;
     font-size: 16px;
 }
 
 /* Header Rules */
 header {
-    background-color: #fff;
-    color: #000;
-    padding: 1rem 2%;
-}
-header img {
-    float: left;
-    padding-right: 1rem;
-}
-header h1 {
-    margin: 2.25rem 0 0 0;
-    font-family: 'Exo', Verdana, Arial, Helvetica, sans-serif;
-}
-header h2 {
-    display: none;
-    margin: 0;
-    font-family: 'Exo', Verdana, Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-    font-size: 1.25rem;
-}
+    background-color: $primaryColor;
+    color: $secondaryColor;
+    padding: 1rem $gutter;
+    img {
+        float: left;
+        padding-right: 1rem;
+    }
+    h1 {
+        margin: 2.25rem 0 0 0;
+        font-family: 'Exo', Verdana, Arial, Helvetica, sans-serif;
+    }
+    h2 {
+        display: none;
+        margin: 0;
+        font-family: 'Exo', Verdana, Arial, Helvetica, sans-serif;
+        font-weight: $lightWeight;
+        font-size: 1.25rem;
+    }
+} 
 
 /* Navigation Rules */
 .nav-wrapper {
@@ -46,6 +46,7 @@ nav li {
 nav a {
     display: block;
     padding: .8rem 0; /* 44 min height */
+    font-family: $fontFamily;
     color: #fff;
     text-align: center;
     text-decoration: none;
@@ -60,33 +61,34 @@ nav a.active {
 
 /* Main Rules */
 main {
-    padding: 0 2% 1rem 2%;
+    padding: 0 $gutter 1rem $gutter;
     display: block;
-}
-main h1 {
-    color: #6dd6f2;
+    background-color: #dcdcdc;
+    h1 {
+    color: #5eaaf8;
     font-family: 'Exo';
-}
-main figure.myphoto {
+    }
+    figure.myphoto {
     width: 100%;
     margin: 0;
-}
-main figure.myphoto img {
+    }
+    figure.myphoto img {
     width: 100%;
-}
-main figure.hero {
+    }
+    figure.hero {
     width: 100%;
     margin: 0;
-}
-main figure.hero img {
+    }
+    figure.hero img {
     width: 100%;
+    }
 }
 
 /* Footer Rules */
 footer {
     text-align: center;
-    padding: 1rem 2%;
-    background-color: #000;
+    padding: 1rem $gutter;
+    background-color: $secondaryColor;
     color: #f9da57;
 }
 

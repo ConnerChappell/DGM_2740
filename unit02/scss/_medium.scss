@@ -1,4 +1,4 @@
-@media only screen and (min-width: 560px) {
+
     nav li {
         float: left;
         width: 25%;
@@ -14,8 +14,6 @@
     main figure.myphoto {
         float: right;
         width: 48%;
-        margin-left: 2%;
+        margin-left: $gutter;
         padding-bottom: .5rem;
     }
-}
-/* End of Media Query */
