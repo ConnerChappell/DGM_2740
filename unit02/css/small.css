@@ -21,10 +21,11 @@ header img {
     padding-right: 1rem;
 }
 header h1 {
-    margin: 2.75rem 0 0 0;
+    margin: 2.25rem 0 0 0;
     font-family: 'Exo', Verdana, Arial, Helvetica, sans-serif;
 }
 header h2 {
+    display: none;
     margin: 0;
     font-family: 'Exo', Verdana, Arial, Helvetica, sans-serif;
     font-weight: lighter;
@@ -66,12 +67,12 @@ main h1 {
     color: #6dd6f2;
     font-family: 'Exo';
 }
-main figure img {
-    width: 100%;
-}
-main figure {
+main figure.myphoto {
     width: 100%;
     margin: 0;
+}
+main figure.myphoto img {
+    width: 100%;
 }
 main figure.hero {
     width: 100%;

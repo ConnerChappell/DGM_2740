@@ -1,5 +1,5 @@
 @media only screen and (min-width: 1028px) {
-    header, nav, main {
+    header, main {
         max-width: 75rem;
         margin: auto;
     }
@@ -14,13 +14,18 @@
     nav a {
         padding: .5rem 1rem;
     }
-    /* Navigation End */
 
-    main figure {
-        width: 31%;
+    /* Header */
+    header h1 {
+        margin: 2.75rem 0 0 0;
     }
-    div.news {
-        column-count: 3;
+    header h2 {
+        display: inline;
+    }
+
+    /* Main */
+    main figure.myphoto {
+        width: 31%;
     }
 }
 /* End of Media Query */

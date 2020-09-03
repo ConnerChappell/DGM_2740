@@ -5,17 +5,20 @@
         width: 25%;
     }
 
+    /* Header */
+    header h1 {
+        margin: 2.75rem 0 0 0;
+    }
+    header h2 {
+        display: inline;
+    }
+
     /* Main */
-    main figure {
+    main figure.myphoto {
         float: right;
         width: 48%;
         margin-left: 2%;
         padding-bottom: .5rem;
-    }
-    div.news {
-        clear: both;
-        column-count: 2;
-        column-rule: solid 1px #D3D3D3;
     }
 }
 /* End of Media Query */
