@@ -8,21 +8,22 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
-    font-family: Verdana, sans-serif;
+    font-family: 'Nunito', Verdana, sans-serif;
 }
 
 
 /*----------- HEADER --------------*/
 header {
     padding: .5rem 2%;
-    background-color: #ddd;
+    display: grid;
+    grid-template-columns: 100px auto;
 }
-header h1 {margin: 0;}
-header h2 {margin: 0; font-weight: normal;}
+header h1 {margin: .25rem 0 0 0;}
+header h2 {margin: 0; font-weight: normal; font-weight: 200;}
 
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: #666;
+    background-color: $menuColor;
 }
 nav ul {
     list-style-type: none;
@@ -35,9 +36,9 @@ nav ul li {
 }
 nav ul li a {
     display: block;
-    background-color: #444;
-    color: #eee;
-    border-left: 1px solid #777;
+    background-color: darken($menuColor, 10%);
+    color: #fff;
+    border-left: 1px solid #fff;
     padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
@@ -46,11 +47,11 @@ nav ul li a {
 nav ul li:first-child a {border-left: none;}
 
 nav ul li a:hover {
-    background-color: #eee;
-    color: #333;
+    background-color: lighten($menuColor, 20%);
+    color: #fff;
 }
 nav ul li.active a {
-    background-color: #000;
+    background-color: #c5333a;
     color: #fff;
 }
 /*----------- MAIN --------------*/
@@ -59,10 +60,26 @@ main {
     min-height: 10rem;
 }
 
+div.fruit-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+div.fruit-gallery figure{
+    flex-basis: 50%;
+    margin: 1rem 0;
+    text-align: center;
+}
+div.fruit-gallery figure img {
+    width: 96%;
+    
+}
+
+
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #ddd;
+    background-color: #316b59;
+    color: #fff;
     padding: .5rem 2%;
     text-align: center;
 }

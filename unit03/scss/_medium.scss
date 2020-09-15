@@ -6,7 +6,7 @@
 
 
 /*----------- HEADER --------------*/
-
+    header h1 {margin: 2rem 0 0 0;}
 
 
 /*----------- NAVIGATION --------------*/
@@ -18,7 +18,13 @@
 
 
 /*----------- MAIN --------------*/
-
+    div.fruit-gallery figure {
+        flex-basis: 33%;
+    }
+    div.fruit-gallery figure img {
+        width: 96%;
+        
+    }
 
 
 /*----------- FOOTER --------------*/
