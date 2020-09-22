@@ -8,7 +8,10 @@ header, nav, main, footer {
 
 
 /*----------- HEADER --------------*/
-
+header {
+        background-image: url(../images/header_large2.jpg);
+        background-position: 50% 60%;
+    }
 
 
 /*----------- NAVIGATION --------------*/
@@ -16,7 +19,10 @@ header, nav, main, footer {
 
 
 /*----------- MAIN --------------*/
-
+figure.float {
+        width: 29%;
+        margin-left: 2%;
+    }
 
 
 /*----------- FOOTER --------------*/
