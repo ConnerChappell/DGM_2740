@@ -320,19 +320,22 @@ body {
   font-family: 'Noto Sans JP', Verdana, sans-serif; }
 
 /*----------- HEADER --------------*/
-header {
-  padding: .5rem 2%;
+#header-wrapper {
   background-color: #ddd; }
+
+header {
+  padding: .5rem 2%; }
 
 header h1 {
   margin: 0; }
 
 header h2 {
   margin: 0;
+  font-size: 1.25rem;
   font-weight: 400; }
 
 /*----------- NAVIGATION --------------*/
-nav {
+#nav-wrapper {
   background-color: #666; }
 
 nav ul {
@@ -373,12 +376,22 @@ main {
 main h2 {
   font-weight: 400; }
 
+figure.animal {
+  margin: 0; }
+
+figure.animal img {
+  width: 75px;
+  position: relative;
+  animation: mymoves 5s 2; }
+
 main p {
   font-weight: 100; }
 
 /*----------- FOOTER --------------*/
+#footer-wrapper {
+  background-color: #ddd; }
+
 footer {
-  background-color: #ddd;
   padding: .5rem 2%;
   text-align: center; }
 
@@ -391,6 +404,9 @@ footer {
 @media only screen and (min-width: 35rem) {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
+  header h2 {
+    font-size: 1.5rem; }
+
   /*----------- NAVIGATION --------------*/
   nav ul {
     margin-left: 2%; }
@@ -412,7 +428,7 @@ footer {
 /* end of media query */
 @media only screen and (min-width: 64rem) {
   header, nav, main, footer {
-    max-width: 64rem;
+    max-width: 60rem;
     margin: auto; }
 
   /*----------- BODY --------------*/
