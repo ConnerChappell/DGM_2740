@@ -317,19 +317,19 @@ html {
 /*----------- BODY --------------*/
 body {
   font-size: 16px;
-  font-family: Verdana, sans-serif; }
+  font-family: 'Open Sans', Verdana, sans-serif; }
 
 /*----------- HEADER --------------*/
 header {
   padding: .5rem 2%;
-  background-color: #ddd; }
+  background-color: #fbe78f; }
 
 header h1 {
   margin: .75rem 0 0 0; }
 
 header h2 {
   margin: 0;
-  font-weight: normal; }
+  font-weight: 300; }
 
 header figure.logo {
   float: left;
@@ -337,7 +337,7 @@ header figure.logo {
 
 /*----------- NAVIGATION --------------*/
 nav {
-  background-color: #666; }
+  background-color: #ee9c45; }
 
 nav ul {
   list-style-type: none;
@@ -350,9 +350,9 @@ nav ul li {
 
 nav ul li a {
   display: block;
-  background-color: #444;
-  color: #eee;
-  border-left: 1px solid #777;
+  background-color: #5e5654;
+  color: #f0f9ff;
+  border-left: 1px solid #f0f9ff;
   padding: .5rem 0;
   text-decoration: none;
   font-size: .9rem;
@@ -362,21 +362,46 @@ nav ul li:first-child a {
   border-left: none; }
 
 nav ul li a:hover {
-  background-color: #eee;
-  color: #333; }
+  background-color: #f0f9ff;
+  color: #5e5654; }
 
 nav ul li.active a {
-  background-color: #000;
-  color: #fff; }
+  background-color: #f0f9ff;
+  color: #5e5654; }
 
 /*----------- MAIN --------------*/
 main {
-  padding: 0 2%;
   min-height: 10rem; }
+
+main picture.hero {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+main picture.hero img {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+main h1 {
+  color: #ee9c45;
+  padding: 0 2%; }
+
+main picture.founder {
+  float: right;
+  width: 46%;
+  padding: 0 2%; }
+
+main picture.founder img {
+  width: 100%; }
+
+main p {
+  padding: 0 2%;
+  line-height: 1.5rem; }
 
 /*----------- FOOTER --------------*/
 footer {
-  background-color: #ddd;
+  background-color: #fbe78f;
   padding: .5rem 2%;
   text-align: center; }
 
@@ -390,11 +415,9 @@ footer {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
-  nav ul {
-    margin-left: 2%; }
-
   nav ul li {
-    width: auto; }
+    float: left;
+    width: 25%; }
 
   nav ul li:first-child a {
     border-left: 1px solid #777; }
@@ -408,7 +431,7 @@ footer {
   /*----------- MAIN --------------*/
   /*----------- FOOTER --------------*/ }
 /* end of media query */
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 75rem) {
   header, nav, main, footer {
     max-width: 75rem;
     margin: auto; }
@@ -416,6 +439,9 @@ footer {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
+  nav ul {
+    width: 35%; }
+
   /*----------- MAIN --------------*/
   /*----------- FOOTER --------------*/ }
 /* end of media query */

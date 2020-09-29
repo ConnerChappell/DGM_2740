@@ -8,17 +8,17 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
-    font-family: Verdana, sans-serif;
+    font-family: 'Open Sans', Verdana, sans-serif;
 }
 
 
 /*----------- HEADER --------------*/
 header {
     padding: .5rem 2%;
-    background-color: #ddd;
+    background-color: $secondary-color;
 }
 header h1 {margin: .75rem 0 0 0;}
-header h2 {margin: 0; font-weight: normal;}
+header h2 {margin: 0; font-weight: $h2-weight;}
 header figure.logo {
     float: left;
     margin: 0 2% 0 0;
@@ -26,7 +26,7 @@ header figure.logo {
 
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: #666;
+    background-color: $primary-color;
 }
 nav ul {
     list-style-type: none;
@@ -39,9 +39,9 @@ nav ul li {
 }
 nav ul li a {
     display: block;
-    background-color: #444;
-    color: #eee;
-    border-left: 1px solid #777;
+    background-color: $nav-background;
+    color: #f0f9ff;
+    border-left: 1px solid #f0f9ff;
     padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
@@ -50,23 +50,49 @@ nav ul li a {
 nav ul li:first-child a {border-left: none;}
 
 nav ul li a:hover {
-    background-color: #eee;
-    color: #333;
+    background-color: #f0f9ff;
+    color: #5e5654;
 }
 nav ul li.active a {
-    background-color: #000;
-    color: #fff;
+    background-color: #f0f9ff;
+    color: #5e5654;
 }
 /*----------- MAIN --------------*/
 main {
-    padding: 0 2%;
+    // padding: 0 2%;
     min-height: 10rem;
+}
+main picture.hero {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+main picture.hero img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+main h1 {
+    color: $primary-color;
+    padding: 0 2%;
+}
+main picture.founder {
+    float: right;
+    width: 46%;
+    padding: 0 2%;
+}
+main picture.founder img {
+    width: 100%;
+}
+main p {
+    padding: 0 2%;
+    line-height: 1.5rem;
 }
 
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #ddd;
+    background-color: $secondary-color;
     padding: .5rem 2%;
     text-align: center;
 }
