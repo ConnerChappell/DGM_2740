@@ -350,7 +350,6 @@ nav ul li {
 
 nav ul li a {
   display: block;
-  background-color: #5e5654;
   color: #f0f9ff;
   border-left: 1px solid #f0f9ff;
   padding: .5rem 0;
@@ -363,11 +362,11 @@ nav ul li:first-child a {
 
 nav ul li a:hover {
   background-color: #f0f9ff;
-  color: #5e5654; }
+  color: #000; }
 
 nav ul li.active a {
   background-color: #f0f9ff;
-  color: #5e5654; }
+  color: #000; }
 
 /*----------- MAIN --------------*/
 main {
