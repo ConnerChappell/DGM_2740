@@ -67,7 +67,21 @@
 
         <h2>PERFORMANCES</h2>
         <section class="gallery">
-            <img alt="A lazy image" class="lazy" data-src="images/concert1.jpg">
+            <figure><img alt="Green Day Concert" class="lazy" data-src="images/concert1.jpg"></figure>
+            <figure><img alt="Green Day Concert" class="lazy" data-src="images/concert2.jpg"></figure>
+            <figure><img alt="Green Day Concert" class="lazy" data-src="images/concert3.jpg"></figure>
+            <figure><img alt="Green Day Concert" class="lazy" data-src="images/concert4.jpg"></figure>
+            <figure><img alt="Green Day Concert" class="lazy" data-src="images/concert5.jpg"></figure>
+            <figure><img alt="Green Day Concert" class="lazy" data-src="images/concert6.jpg"></figure>
+            <figure><img alt="Green Day Concert" class="lazy" data-src="images/concert7.jpg"></figure>
+            <figure><img alt="Green Day Concert" class="lazy" data-src="images/concert8.jpg"></figure>
+            <figure><img alt="Green Day Concert" class="lazy" data-src="images/concert9.jpg"></figure>
+            <figure><img alt="Green Day Concert" class="lazy" data-src="images/concert10.jpg"></figure>
+            <figure><img alt="Green Day Concert" class="lazy" data-src="images/concert11.jpg"></figure>
+            <figure><img alt="Green Day Concert" class="lazy" data-src="images/concert12.jpg"></figure>
+            <figure><img alt="Green Day Concert" class="lazy" data-src="images/concert13.jpg"></figure>
+            <figure><img alt="Green Day Concert" class="lazy" data-src="images/concert14.jpg"></figure>
+            <figure><img alt="Green Day Concert" class="lazy" data-src="images/concert15.jpg"></figure> 
         </section>
         
     </main>
@@ -76,6 +90,16 @@
     <footer>
         &copy; 201x &bull; Conner Chappell &bull; 10905977
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.2/dist/lazyload.min.js"></script>
+
+    <script>
+        var lazyLoadInstance = new LazyLoad({
+            // Your custom settings go here
+            elements_selector: ".lazy",
+            threshold: 0
+        });
+    </script>
 
 </body>
 </html>
