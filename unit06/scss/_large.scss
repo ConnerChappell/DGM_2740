@@ -1,5 +1,5 @@
 header, nav, main, footer {
-        max-width: 64rem;
+        max-width: 75rem;
         margin:auto;
 }
 
@@ -12,11 +12,19 @@ header, nav, main, footer {
 
 
 /*----------- NAVIGATION --------------*/
-
+nav ul li {
+        width: auto;
+}
 
 
 /*----------- MAIN --------------*/
-
+main div.members div {
+        width: 25%;
+        padding-right: 1.5rem;
+    }
+#jason {
+        padding: 0;
+}
 
 
 /*----------- FOOTER --------------*/

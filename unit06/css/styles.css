@@ -317,19 +317,22 @@ html {
 /*----------- BODY --------------*/
 body {
   font-size: 16px;
-  font-family: Verdana, sans-serif; }
+  font-family: 'Open Sans', Verdana, sans-serif; }
 
 /*----------- HEADER --------------*/
 header {
   padding: .5rem 2%;
-  background-color: #ddd; }
+  background-color: #000; }
 
 header h1 {
-  margin: 0; }
+  margin: 0;
+  font-weight: 700;
+  color: #b13c38; }
 
 header h2 {
   margin: 0;
-  font-weight: normal; }
+  font-weight: 400;
+  color: #fff; }
 
 /*----------- NAVIGATION --------------*/
 nav {
@@ -347,8 +350,8 @@ nav ul li {
 nav ul li a {
   display: block;
   background-color: #444;
-  color: #eee;
-  border-left: 1px solid #777;
+  color: #fff;
+  border-left: 1px solid #fff;
   padding: .5rem 0;
   text-decoration: none;
   font-size: .9rem;
@@ -358,8 +361,8 @@ nav ul li:first-child a {
   border-left: none; }
 
 nav ul li a:hover {
-  background-color: #eee;
-  color: #333; }
+  background-color: #b13c38;
+  color: #fff; }
 
 nav ul li.active a {
   background-color: #000;
@@ -370,9 +373,46 @@ main {
   padding: 0 2%;
   min-height: 10rem; }
 
+main h1 {
+  font-weight: 700;
+  margin-bottom: 0; }
+
+main h2 {
+  font-weight: 400; }
+
+main p {
+  font-weight: 300; }
+
+main div.members {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%; }
+
+main div.members img {
+  float: right;
+  width: 150px; }
+
+#billie img {
+  shape-outside: circle(40% at 50% 50%);
+  clip-path: circle(40% at 50% 50%); }
+
+#tre img {
+  shape-outside: polygon(50% 0%, 0 75%, 100% 75%);
+  clip-path: polygon(50% 0%, 0 75%, 100% 75%); }
+
+#mike img {
+  shape-outside: polygon(0 0, 85% 85%, 85% 0);
+  clip-path: polygon(0 0, 85% 85%, 85% 0); }
+
+#jason img {
+  shape-outside: circle(65% at 75% 25%);
+  clip-path: circle(65% at 75% 25%); }
+
 /*----------- FOOTER --------------*/
 footer {
-  background-color: #ddd;
+  background-color: #000;
+  color: #fff;
   padding: .5rem 2%;
   text-align: center; }
 
@@ -390,7 +430,8 @@ footer {
     margin-left: 2%; }
 
   nav ul li {
-    width: auto; }
+    float: left;
+    width: 25%; }
 
   nav ul li:first-child a {
     border-left: 1px solid #777; }
@@ -402,16 +443,33 @@ footer {
     padding: .5rem 1rem; }
 
   /*----------- MAIN --------------*/
+  main div.members {
+    flex-wrap: wrap; }
+
+  main div.members div {
+    width: 50%;
+    padding-right: 1.5rem; }
+
   /*----------- FOOTER --------------*/ }
 /* end of media query */
 @media only screen and (min-width: 64rem) {
   header, nav, main, footer {
-    max-width: 64rem;
+    max-width: 75rem;
     margin: auto; }
 
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
+  nav ul li {
+    width: auto; }
+
   /*----------- MAIN --------------*/
+  main div.members div {
+    width: 25%;
+    padding-right: 1.5rem; }
+
+  #jason {
+    padding: 0; }
+
   /*----------- FOOTER --------------*/ }
 /* end of media query */

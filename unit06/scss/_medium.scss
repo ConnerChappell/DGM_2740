@@ -11,14 +11,23 @@
 
 /*----------- NAVIGATION --------------*/
     nav ul {margin-left: 2%;}
-    nav ul li {width: auto;}
+    nav ul li {
+        float: left;
+        width: 25%;
+    }
     nav ul li:first-child a {border-left: 1px solid #777;}
     nav ul li:last-child a {border-right: 1px solid #777;}
     nav ul li a{padding: .5rem 1rem;}
 
 
 /*----------- MAIN --------------*/
-
+main div.members {
+    flex-wrap: wrap;
+}
+main div.members div {
+    width: 50%;
+    padding-right: 1.5rem;
+}
 
 
 /*----------- FOOTER --------------*/
