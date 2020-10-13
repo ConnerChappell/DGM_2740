@@ -6,20 +6,32 @@
 
 
 /*----------- HEADER --------------*/
-
+header h1 {
+    font-size: 2rem;
+}
+header h2 {
+    font-size: 1.5rem;
+}
+header input {
+    margin-top: 0;
+    width: auto;
+}
 
 
 /*----------- NAVIGATION --------------*/
-    nav ul {margin-left: 2%;}
-    nav ul li {width: auto;}
-    nav ul li:first-child a {border-left: 1px solid #777;}
-    nav ul li:last-child a {border-right: 1px solid #777;}
-    nav ul li a{padding: .5rem 1rem;}
-
+    nav ul {padding: 0;}
+    nav ul li {float: left; width: auto;}
+    nav ul li a{padding: .5rem 1rem; font-size: 1.25rem;}
+    nav ul li.active a {background-color: #000;}
 
 /*----------- MAIN --------------*/
 
 
+/*----------- COLUMNS --------------*/
+@for $i from 1 through 12 {
+    $w:($i / 12) * 100%;
+    .medium-#{$i} {flex-basis: $w;}
+} // End loop
 
 /*----------- FOOTER --------------*/
     

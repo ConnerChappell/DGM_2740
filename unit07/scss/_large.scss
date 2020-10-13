@@ -1,5 +1,5 @@
-header, nav, main, footer {
-        max-width: 64rem;
+.header-div, nav, main, footer {
+        max-width: 75rem;
         margin:auto;
 }
 
@@ -18,6 +18,11 @@ header, nav, main, footer {
 /*----------- MAIN --------------*/
 
 
+/*----------- COLUMNS --------------*/
+@for $i from 1 through 12 {
+        $w:($i / 12) * 100%;
+        .large-#{$i} {flex-basis: $w;}
+    } // End loop
 
 /*----------- FOOTER --------------*/
     

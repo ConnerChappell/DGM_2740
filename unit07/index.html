@@ -13,6 +13,12 @@
 
 
 <!-- STYLE SHEETS -->
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
 <link href="css/styles.css" rel="stylesheet">
 </head>
 
@@ -20,8 +26,11 @@
 <body>
 <!-- HEADER HERE -->
 	<header>
-        <h1>Martin, Tuft, and Brainly</h1>
-        <h2>Sound Council. Smart Business</h2>
+        <div class="header-div">
+            <h1>Martin, Tuft, and Brainly</h1>
+            <input type="text" placeholder="Search...">
+            <h2>Sound Council. Smart Business</h2>
+        </div>
     </header>
     
     
@@ -37,12 +46,89 @@
     
 <!-- CONTENT HERE -->
     <main>
+
+        <div class="flexed">
+
+            <div class="large-2"></div>
+            <div class="column small-6 medium-3 large-2 card">
+                <h2 class="attorney-name">Perry Mason</h2>
+                <img class="attorney-headshot" src="./images/attorney1.jpg" alt="Attorney Perry Mason">
+                <div class="learn-more">
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="column small-6 medium-3 large-2 card">
+                <h2 class="attorney-name">Malcom Turnbull</h2>
+                <img class="attorney-headshot" src="./images/attorney2.jpg" alt="Attorney Malcom Turnbull">
+                <div class="learn-more">
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="column small-6 medium-3 large-2 card">
+                <h2 class="attorney-name">Alan Shore</h2>
+                <img class="attorney-headshot" src="./images/attorney3.jpg" alt="Attorney Alan Shore">
+                <div class="learn-more">
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="column small-6 medium-3 large-2 card">
+                <h2 class="attorney-name">Alicia Florrick</h2>
+                <img class="attorney-headshot" src="./images/attorney4.jpg" alt="Attorney Alicia Florrick">
+                <div class="learn-more">
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+ 
+        </div> <!--end parent-->
+
         
+        <div class="flexed">
+
+            <div class="small-1 large-1"></div>
+            <div class="column small-10 medium-4 large-3 call-to-action">CLIENTS</div>
+            <div class="column small-10 medium-4 large-4 call-to-action">YOUR CASE REVIEW</div>
+            <div class="column small-10 medium-4 large-3 call-to-action">FAMOUS CASES</div>
+
+        </div> <!--end parent-->
+
+
+        <div class="flexed">
+
+            <div class="column small-12 medium-6 large-3 blog">
+                <img src="./images/blog1.jpg" alt="Blog 1 Image">
+                <h2>Blog Post #1</h2>
+                <p>Monotonectally procrastinate installed base potentialities for business ideas. Compellingly initiate impactful infrastructures rather than an expanded array of outsourcing. Quickly disseminate distributed portals without efficient.</p>
+                <div class="read-more">Read More</div>
+            </div>
+            <div class="column small-12 medium-6 large-3 blog">
+                <img src="./images/blog2.jpg" alt="Blog 2 Image">
+                <h2>Blog Post #2</h2>
+                <p>Monotonectally procrastinate installed base potentialities for business ideas. Compellingly initiate impactful infrastructures rather than an expanded array of outsourcing. Quickly disseminate distributed portals without efficient.</p>
+                <div class="read-more">Read More</div>
+            </div>
+            <div class="column small-12 medium-6 large-3 blog">
+                <img src="./images/blog3.jpg" alt="Blog 3 Image">
+                <h2>Blog Post #3</h2>
+                <p>Monotonectally procrastinate installed base potentialities for business ideas. Compellingly initiate impactful infrastructures rather than an expanded array of outsourcing. Quickly disseminate distributed portals without efficient.</p>
+                <div class="read-more">Read More</div>
+            </div>
+            <div class="column small-12 medium-6 large-3 blog">
+                <img src="./images/blog4.jpg" alt="Blog 4 Image">
+                <h2>Blog Post #4</h2>
+                <p>Monotonectally procrastinate installed base potentialities for business ideas. Compellingly initiate impactful infrastructures rather than an expanded array of outsourcing. Quickly disseminate distributed portals without efficient.</p>
+                <div class="read-more">Read More</div>
+            </div>
+
+        </div> <!--end parent-->
+
     </main>
     
 <!-- FOOTER HERE -->   
     <footer>
-        
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-linkedin"></i>
     </footer>
 
 </body>

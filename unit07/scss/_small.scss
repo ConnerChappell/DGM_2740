@@ -8,7 +8,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
-    font-family: Verdana, sans-serif;
+    font-family: 'Oswald', Verdana, sans-serif;
 }
 
 
@@ -16,9 +16,18 @@ body {
 header {
     padding: .5rem 2%;
     background-color: #ddd;
+    border-top: 5px solid red;
+    overflow: hidden;
 }
-header h1 {margin: 0;}
-header h2 {margin: 0; font-weight: normal;}
+header h1 {margin: 0; font-size: 1.5rem;}
+header h2 {margin: .25rem 0 0 0; font-weight: normal; font-size: .75rem;}
+header input {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 2rem;
+    width: 50%;
+}
 
 /*----------- NAVIGATION --------------*/
 nav {
@@ -26,37 +35,98 @@ nav {
 }
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: .5rem 2%;
     margin: 0;
 }
 nav ul li {
-    float: left;
     width: 25%;
 }
 nav ul li a {
     display: block;
-    background-color: #444;
+    // background-color: #444;
     color: #eee;
-    border-left: 1px solid #777;
     padding: .5rem 0;
     text-decoration: none;
-    font-size: .9rem;
-    text-align: center;
+    font-size: 1.5rem;
+    text-align: left;
 }
-nav ul li:first-child a {border-left: none;}
-
 nav ul li a:hover {
     background-color: #eee;
     color: #333;
 }
 nav ul li.active a {
-    background-color: #000;
     color: #fff;
 }
 /*----------- MAIN --------------*/
 main {
     padding: 0 2%;
     min-height: 10rem;
+}
+main h2 {
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+main p {
+    font-weight: 300;
+}
+
+
+/*----------- COLUMNS --------------*/
+div.flexed {display: flex; flex-wrap: wrap;}
+.column {padding: 0 $gutter;}
+@for $i from 1 through 12 {
+    $w:($i / 12) * 100%;
+    .small-#{$i} {flex-basis: $w;}
+} // End loop
+
+.card {
+    text-align: center;
+    margin: 2rem 0;
+}
+.attorney-name {
+    background-color: red;
+    margin: 0;
+    padding: 1.5rem;
+}
+.attorney-headshot {
+    margin: 0;
+    width: 100%;
+}
+.learn-more {
+    background-color: red;
+    margin: 0;
+    padding: 1.5rem;
+}
+.learn-more a {
+    background-color: white;
+    padding: .25rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.call-to-action {
+    border: 2px solid red;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+.blog {
+    margin: 2rem 0;
+}
+.blog img {
+    margin: 0;
+    width: 100%;
+}
+.blog h2 {
+    margin: 0;
+}
+.blog p {
+    margin: .5rem 0;
+}
+.blog .read-more {
+    background-color: red;
+    text-align: center;
+    padding: 1rem;
 }
 
 
@@ -65,6 +135,7 @@ footer {
     background-color: #ddd;
     padding: .5rem 2%;
     text-align: center;
+    font-size: 3rem;
 }
 
 
