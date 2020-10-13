@@ -15,8 +15,8 @@ body {
 /*----------- HEADER --------------*/
 header {
     padding: .5rem 2%;
-    background-color: #ddd;
-    border-top: 5px solid red;
+    background-color: $primary-color;
+    border-top: 5px solid $secondary-color;
     overflow: hidden;
 }
 header h1 {margin: 0; font-size: 1.5rem;}
@@ -31,7 +31,7 @@ header input {
 
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: #666;
+    background-color: $grey-accent;
 }
 nav ul {
     list-style-type: none;
@@ -43,23 +43,22 @@ nav ul li {
 }
 nav ul li a {
     display: block;
-    // background-color: #444;
-    color: #eee;
+    color: #fff;
     padding: .5rem 0;
     text-decoration: none;
     font-size: 1.5rem;
     text-align: left;
 }
 nav ul li a:hover {
-    background-color: #eee;
-    color: #333;
+    color: $primary-color;
 }
-nav ul li.active a {
+.active {
+    background-color: $secondary-color;
     color: #fff;
 }
 /*----------- MAIN --------------*/
 main {
-    padding: 0 2%;
+    padding: 0;
     min-height: 10rem;
 }
 main h2 {
@@ -81,10 +80,11 @@ div.flexed {display: flex; flex-wrap: wrap;}
 
 .card {
     text-align: center;
-    margin: 2rem 0;
+    margin: 2rem .25rem;
 }
 .attorney-name {
-    background-color: red;
+    background-color: $secondary-color;
+    color: #fff;
     margin: 0;
     padding: 1.5rem;
 }
@@ -93,22 +93,25 @@ div.flexed {display: flex; flex-wrap: wrap;}
     width: 100%;
 }
 .learn-more {
-    background-color: red;
+    background-color: $secondary-color;
     margin: 0;
     padding: 1.5rem;
 }
 .learn-more a {
     background-color: white;
+    color: #000;
     padding: .25rem;
     border-radius: 5px;
     text-decoration: none;
 }
 .call-to-action {
-    border: 2px solid red;
+    background-color: $primary-color;
+    color: #fff;
     text-align: center;
-    padding: 2rem;
-    margin: 2rem 0;
+    padding: 1rem;
+    margin: 2rem .25rem;
     font-size: 2rem;
+    text-decoration: none;
 }
 .blog {
     margin: 2rem 0;
@@ -123,16 +126,24 @@ div.flexed {display: flex; flex-wrap: wrap;}
 .blog p {
     margin: .5rem 0;
 }
-.blog .read-more {
-    background-color: red;
+.read-more {
+    background-color: $primary-color;
+    color: #fff;
     text-align: center;
     padding: 1rem;
+}
+.tip {
+    margin-bottom: 2rem;
+}
+.faq {
+    margin-bottom: 2rem;
 }
 
 
 /*----------- FOOTER --------------*/
 footer {
     background-color: #ddd;
+    color: $secondary-color;
     padding: .5rem 2%;
     text-align: center;
     font-size: 3rem;
