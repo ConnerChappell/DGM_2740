@@ -365,9 +365,8 @@ nav ul li a {
 nav ul li a:hover {
   color: #ad8540; }
 
-.active {
-  background-color: #1c445d;
-  color: #fff; }
+.active a {
+  color: #1c445d; }
 
 /*----------- MAIN --------------*/
 main {
@@ -460,6 +459,9 @@ div.flexed {
   font-size: 2rem;
   text-decoration: none; }
 
+.call-to-action:hover {
+  color: #1c445d; }
+
 .blog {
   margin: 2rem 0; }
 
@@ -473,17 +475,37 @@ div.flexed {
 .blog p {
   margin: .5rem 0; }
 
-.read-more {
-  background-color: #ad8540;
+.blog .read-more {
+  background-color: #1c445d;
   color: #fff;
   text-align: center;
   padding: 1rem; }
 
+.blog .read-more:hover {
+  background-color: #a9a9a9;
+  cursor: pointer; }
+
 .tip {
   margin-bottom: 2rem; }
 
+.tip .read-more {
+  color: #ad8540;
+  font-weight: 600;
+  text-decoration: underline; }
+
+.tip .read-more:hover {
+  cursor: pointer; }
+
 .faq {
   margin-bottom: 2rem; }
+
+.faq .read-more {
+  color: #ad8540;
+  font-weight: 600;
+  text-decoration: underline; }
+
+.faq .read-more:hover {
+  cursor: pointer; }
 
 /*----------- FOOTER --------------*/
 footer {
@@ -523,6 +545,10 @@ footer {
   nav ul li a {
     padding: .5rem 1rem;
     font-size: 1.25rem; }
+
+  .active a {
+    background-color: #1c445d;
+    color: #fff; }
 
   /*----------- MAIN --------------*/
   /*----------- COLUMNS --------------*/

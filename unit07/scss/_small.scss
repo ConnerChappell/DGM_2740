@@ -52,9 +52,8 @@ nav ul li a {
 nav ul li a:hover {
     color: $primary-color;
 }
-.active {
-    background-color: $secondary-color;
-    color: #fff;
+.active a {
+    color: $secondary-color;
 }
 /*----------- MAIN --------------*/
 main {
@@ -113,6 +112,9 @@ div.flexed {display: flex; flex-wrap: wrap;}
     font-size: 2rem;
     text-decoration: none;
 }
+.call-to-action:hover {
+    color: $secondary-color;
+}
 .blog {
     margin: 2rem 0;
 }
@@ -126,18 +128,39 @@ div.flexed {display: flex; flex-wrap: wrap;}
 .blog p {
     margin: .5rem 0;
 }
-.read-more {
-    background-color: $primary-color;
+.blog .read-more {
+    background-color: $secondary-color;
     color: #fff;
     text-align: center;
     padding: 1rem;
 }
+.blog .read-more:hover {
+    background-color: $grey-accent;
+    cursor: pointer;
+}
 .tip {
     margin-bottom: 2rem;
+}
+.tip .read-more {
+    color: $primary-color;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.tip .read-more:hover {
+    cursor: pointer;
 }
 .faq {
     margin-bottom: 2rem;
 }
+.faq .read-more {
+    color: $primary-color;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.faq .read-more:hover {
+    cursor: pointer;
+}
+
 
 
 /*----------- FOOTER --------------*/
