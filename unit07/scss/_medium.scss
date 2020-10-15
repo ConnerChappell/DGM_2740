@@ -36,5 +36,12 @@ header input {
     .medium-#{$i} {flex-basis: $w;}
 } // End loop
 
+.learn-more a {
+    padding: 0 .25rem;
+}
+.call-to-action {
+    margin: 2rem .25rem;
+}
+
 /*----------- FOOTER --------------*/
     

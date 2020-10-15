@@ -79,7 +79,7 @@ div.flexed {display: flex; flex-wrap: wrap;}
 
 .card {
     text-align: center;
-    margin: 2rem .25rem;
+    margin-top: 2rem;
 }
 .attorney-name {
     background-color: $secondary-color;
@@ -108,15 +108,17 @@ div.flexed {display: flex; flex-wrap: wrap;}
     color: #fff;
     text-align: center;
     padding: 1rem;
-    margin: 2rem .25rem;
+    margin: 1.5rem;
     font-size: 2rem;
-    text-decoration: none;
+    border: none;
+    outline: none;
 }
 .call-to-action:hover {
     color: $secondary-color;
+    cursor: pointer;
 }
 .blog {
-    margin: 2rem 0;
+    margin-bottom: 2rem;
 }
 .blog img {
     margin: 0;
