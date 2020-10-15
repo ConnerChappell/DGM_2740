@@ -457,8 +457,9 @@ div.flexed {
   background-color: #ad8540;
   color: #fff;
   text-align: center;
-  padding: 1rem;
-  margin: .25rem;
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  width: 100%;
   font-size: 2rem;
   border: none;
   outline: none; }
@@ -467,6 +468,9 @@ div.flexed {
   color: #1c445d;
   cursor: pointer; }
 
+@media only screen and (max-width: 320px) {
+  .button-flex {
+    justify-content: center; } }
 .blog {
   margin-top: 2rem;
   margin-bottom: 2rem; }
@@ -599,6 +603,11 @@ footer {
 
   .learn-more a {
     padding: 0 .25rem; }
+
+  .call-to-action {
+    margin: 0;
+    font-size: 1.25rem;
+    height: 100%; }
 
   /*----------- FOOTER --------------*/ }
 /* end of media query */
