@@ -31,16 +31,13 @@ header input {
 
 
 /*----------- COLUMNS --------------*/
-@for $i from 1 through 12 {
+@for $i from 0 through 12 {
     $w:($i / 12) * 100%;
     .medium-#{$i} {flex-basis: $w;}
 } // End loop
 
 .learn-more a {
     padding: 0 .25rem;
-}
-.call-to-action {
-    margin: 2rem .25rem;
 }
 
 /*----------- FOOTER --------------*/

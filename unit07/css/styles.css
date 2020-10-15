@@ -428,7 +428,8 @@ div.flexed {
 
 .card {
   text-align: center;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
 .attorney-name {
   background-color: #1c445d;
@@ -457,7 +458,7 @@ div.flexed {
   color: #fff;
   text-align: center;
   padding: 1rem;
-  margin: 1.5rem;
+  margin: .25rem;
   font-size: 2rem;
   border: none;
   outline: none; }
@@ -467,6 +468,7 @@ div.flexed {
   cursor: pointer; }
 
 .blog {
+  margin-top: 2rem;
   margin-bottom: 2rem; }
 
 .blog img {
@@ -556,6 +558,9 @@ footer {
 
   /*----------- MAIN --------------*/
   /*----------- COLUMNS --------------*/
+  .medium-0 {
+    flex-basis: 0%; }
+
   .medium-1 {
     flex-basis: 8.3333333333%; }
 
@@ -594,9 +599,6 @@ footer {
 
   .learn-more a {
     padding: 0 .25rem; }
-
-  .call-to-action {
-    margin: 2rem .25rem; }
 
   /*----------- FOOTER --------------*/ }
 /* end of media query */
