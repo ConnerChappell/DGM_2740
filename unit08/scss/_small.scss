@@ -8,7 +8,11 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
-    font-family: Verdana, sans-serif;
+    font-family: 'News Cycle', Verdana, sans-serif;
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 
@@ -18,52 +22,101 @@ header {
     background-color: #fff;
 }
 header img {width: 100px; float: left;}
-header h1 {margin: 0;}
-header h2 {margin: 0; font-weight: normal;}
+header h1 {margin: 0; display: none;}
+header h2 {margin: 0; display: none;}
 
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: #4a4a4a;
+    background-color: $primary-blue;
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
 }
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-nav ul li {
-    float: left;
-    width: 25%;
-}
 nav ul li a {
     display: block;
-    color: #eee;
-    padding: .5rem 0;
+    padding: .8rem 2%;
+    color: #fff;
     text-decoration: none;
-    font-size: .9rem;
-    text-align: center;
+    border-top: 1px solid #fff;
 }
-nav ul li:first-child a {border-left: none;}
-
 nav ul li a:hover {
-    background-color: #eee;
-    color: #333;
+    background-color: $secondary-blue;
+    color: #fff;
 }
 nav ul li.active a {
-    background-color: #000;
+    background-color: $primary-red;
     color: #fff;
-    border: 1px solid red;
 }
+nav ul.hide {
+    display: none;
+}
+
 /*----------- MAIN --------------*/
 main {
     padding: 0 2%;
     min-height: 10rem;
 }
+div.storyGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+
+    span {
+        display: block;
+        text-align: center;
+        font-size: .75rem;
+    }
+}
+.teaser {
+    padding: .5rem 2%;
+}
+.lead {
+    padding: .5rem 1%;
+}
+.teaser img, .lead img {
+    width: 100%;
+}
+.lead {
+    grid-column: 1 / span 2;;
+}
 
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #ddd;
+    color: #fff;
     padding: .5rem 2%;
+}
+.footer-wrapper {
+    width: 100%;
+    background-color: $primary-blue;
+    margin-top: 1rem;
+}
+footer h2 {
+    margin-bottom: .25rem;
+}
+footer div.parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0 2%;
+    margin-bottom: 1rem;
+}
+.copyright {
+    margin-top: 4rem;
     text-align: center;
 }
 

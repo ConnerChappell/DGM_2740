@@ -11,6 +11,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!-- STYLE SHEETS -->
+<link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap" rel="stylesheet">
 <link href="css/styles.css" rel="stylesheet">
 
 </head>
@@ -27,7 +28,8 @@
     
 <!-- NAVIGATION HERE -->
     <nav class="clearfix">
-        <ul >
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
             <li><a href="#">Home</a></li>
             <li><a href="#">Opinion</a></li>
             <li class="active"><a href="#">Politics</a></li>
@@ -38,13 +40,87 @@
     
 <!-- CONTENT HERE -->
     <main>
-        
+        <div class="storyGrid">
+            <div class="lead">
+                <img src="./images/story1.jpg" alt="Lead Story">
+                <span>Story #1</span>
+            </div>
+
+            <div class="teaser">
+                <img src="./images/story2.jpg" alt="">
+                <span>Story #2</span>
+            </div>
+
+            <div class="teaser">
+                <img src="./images/story3.jpg" alt="">
+                <span>Story #3</span>
+            </div>
+
+            <div class="teaser">
+                <img src="./images/story4.jpg" alt="">
+                <span>Story #4</span>
+            </div>
+
+            <div class="teaser">
+                <img src="./images/story5.jpg" alt="">
+                <span>Story #5</span>
+            </div>
+
+            <div class="teaser">
+                <img src="./images/story6.jpg" alt="">
+                <span>Story #6</span>
+            </div>
+
+            <div class="teaser">
+                <img src="./images/story7.jpg" alt="">
+                <span>Story #7</span>
+            </div>
+        </div>
     </main>
     
-<!-- FOOTER HERE -->   
-    <footer>
-        &copy; 2020 &bull; Conner Chappell &bull; 10905977
-    </footer>
+<!-- FOOTER HERE -->  
+    <div class="footer-wrapper">
+        <footer>
+            <div class="parent">
+                <div class="flex">
+                    <h2>SECTIONS</h2>
+                    <a>Home</a>
+                    <a>Video</a>
+                    <a>Entertainment</a>
+                    <a>Health</a>
+                </div>
 
+                <div class="flex">
+                    <h2>SHOWS</h2>
+                    <a>Happenings</a>
+                    <a>Sunday AM</a>
+                    <a>Newsroom</a>
+                    <a>World</a>
+                </div>
+
+                <div class="flex">
+                    <h2>TOOLS</h2>
+                    <a>Jobs</a>
+                    <a>Privacy Policy</a>
+                    <a>Contact Us</a>
+                    <a>Media Relations</a>
+                </div>
+
+                <div class="flex">
+                    <h2>PERSONALITIES</h2>
+                    <a>Jim Johnson</a>
+                    <a>Al Avery</a>
+                    <a>Billy Bob</a>
+                    <a>Charlie Christensen</a>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2020 &bull; Conner Chappell &bull; 10905977
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/scripts.js"></script>
 </body>
 </html>

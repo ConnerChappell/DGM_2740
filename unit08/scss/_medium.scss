@@ -10,14 +10,24 @@
 
 
 /*----------- NAVIGATION --------------*/
+    nav button {display: none;}
+    nav ul.hide {display: block;}
     nav ul {margin-left: 2%;}
-    nav ul li {width: auto;}
-    nav ul li a{padding: .5rem 1rem;}
+    nav ul li {float: left; width: auto;}
+    nav ul li a{padding: .5rem 1rem; text-align: center; border: none;}
 
 
 /*----------- MAIN --------------*/
-
+div.storyGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    .lead {
+        grid-column: 1 / span 3;
+    }
+}
 
 
 /*----------- FOOTER --------------*/
-    
+footer div.parent {
+    grid-template-columns: 1fr 1fr;
+}

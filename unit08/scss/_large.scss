@@ -16,8 +16,25 @@ main {
 
 
 /*----------- MAIN --------------*/
+div.storyGrid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
 
+        span {
+                font-size: 1rem;
+        }
+
+        .lead {
+                grid-column: 1 / span 3;
+                grid-row: 1 / span 2;
+        }
+}
 
 
 /*----------- FOOTER --------------*/
-    
+footer {
+        max-width: 80rem;
+        margin: auto;
+}
+footer div.parent {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
