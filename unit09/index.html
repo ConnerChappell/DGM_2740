@@ -14,39 +14,122 @@
 
 
 <!-- STYLE SHEETS -->
+<!-- Google Font Start -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap" rel="stylesheet">
+<!-- Google Font End -->
 <link href="css/styles.css" rel="stylesheet">
 
      
 </head>
 <body>
 <!-- HEADER HERE -->
-	<header>
- <h1>Company Name Here</h1>
-        <h2>Possible Slogan or Tagline</h2>
+	<header class="clearfix">
+        <h1>Boston</h1>
+        <h2>The City on a Hill</h2>
     </header>
     
     
 <!-- NAVIGATION HERE -->
     <nav class="clearfix">
-        <ul >
-            <li><a href="#">Home</a></li>
-            <li class="active"><a href="#">Products</a></li>
-            <li><a href="#">Location</a></li>
-            <li><a href="#">Contact</a></li>    
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="#">Visit</a></li>
+            <li><a href="#">Departments</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Pay Bills</a></li>
+            <li><a href="#">Meetings</a></li>
+            <li><a href="#">Help</a></li>  
         </ul>
     </nav>
     
     
 <!-- CONTENT HERE -->
     <main>
-        <h1>Products</h1>
-        <p>The page name should almost exactly match the menu item. </p>
+        <div class="my_slider">
+            <picture>
+                <source srcset="./images/boston1_small.jpg" media="(max-width: 28.12rem)">
+                <source srcset="./images/boston1.jpg" media="(min-width: 28.12rem)">
+                <img src="./images/boston1.jpg" alt="Slider 1 Image">
+                <div>Faneuil Hall and Quincy Market</div>
+            </picture>
+
+            <picture>
+                <source srcset="./images/boston2_small.jpg" media="(max-width: 28.12rem)">
+                <source srcset="./images/boston2.jpg" media="(min-width: 28.12rem)">
+                <img src="./images/boston2.jpg" alt="Slider 2 Image">
+                <div>Downtown Boston during the day</div>
+            </picture>
+
+            <picture>
+                <source srcset="./images/boston3_small.jpg" media="(max-width: 28.12rem)">
+                <source srcset="./images/boston3.jpg" media="(min-width: 28.12rem)">
+                <img src="./images/boston3.jpg" alt="Slider 3 Image">
+                <div>Overhead view of Fenway Park: Home of the Boston Red Sox</div>
+            </picture>
+
+            <picture>
+                <source srcset="./images/boston4_small.jpg" media="(max-width: 28.12rem)">
+                <source srcset="./images/boston4.jpg" media="(min-width: 28.12rem)">
+                <img src="./images/boston4.jpg" alt="Slider 4 Image">
+                <div>Equestrian Statue of George Washington in Boston's Public Garden</div>
+            </picture>
+        </div>
+        <!-- Slider End -->
+
+
+        <h1>PLAN YOUR VISIT</h1>
+        <div class="cards">
+            <div>
+                <a href="#">
+                    <img src="./images/bed.png" alt="bed icon">
+                    <h3>PLACES TO STAY</h3>
+                </a>
+            </div>
+
+            <div>
+                <a href="#">
+                    <img src="./images/line.png" alt="line icon">
+                    <h3>WALK THE RED LINE</h3>
+                </a>
+            </div>
+
+            <div>
+                <a href="#">
+                    <img src="./images/city.png" alt="city icon">
+                    <h3>PASS TO THE CITY</h3>
+                </a>
+            </div>
+
+            <div>
+                <a href="#">
+                    <img src="./images/dining.png" alt="dining icon">
+                    <h3>FINE DINING</h3>
+                </a>
+            </div>
+
+        </div>
+        <!-- Cards End -->
+        
     </main>
     
 <!-- FOOTER HERE -->   
     <footer>
-        &copy; 201x &bull; Conner Chappell &bull; 10905977
+        &copy; 2020 &bull; Conner Chappell &bull; 10905977
     </footer>
 
+    <script src="./js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.my_slider').slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 4000
+            });
+        });
+    </script>
 </body>
 </html>

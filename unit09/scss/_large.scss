@@ -12,11 +12,25 @@ header, nav, main, footer {
 
 
 /*----------- NAVIGATION --------------*/
-
+nav ul li a {padding: .75rem 1rem;}
 
 
 /*----------- MAIN --------------*/
-
+.cards div {
+        flex-basis: 25%;
+}
+.cards div:nth-child(1) a {
+        background-color: $primary-red;
+    }
+    .cards div:nth-child(2) a {
+        background-color: $dark-blue;
+    }
+    .cards div:nth-child(3) a {
+        background-color: $primary-red;
+    }
+    .cards div:nth-child(4) a {
+        background-color: $dark-blue;
+    }
 
 
 /*----------- FOOTER --------------*/

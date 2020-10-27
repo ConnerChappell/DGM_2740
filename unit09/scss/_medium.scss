@@ -6,20 +6,42 @@
 
 
 /*----------- HEADER --------------*/
-
+header h1 {font-size: 5rem;}
+header h2 {font-size: 2rem;}
 
 
 /*----------- NAVIGATION --------------*/
-    nav ul {margin-left: 2%;}
-    nav ul li {width: auto;}
-    nav ul li:first-child a {border-left: 1px solid #777;}
-    nav ul li:last-child a {border-right: 1px solid #777;}
-    nav ul li a{padding: .5rem 1rem;}
+nav {
+background: #fb4d42; /* Old browsers */
+background: -moz-linear-gradient(top,  #fb4d42 0%, #a13f35 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #fb4d42 0%,#a13f35 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #fb4d42 0%,#a13f35 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb4d42', endColorstr='#a13f35',GradientType=0 ); /* IE6-9 */
+
+}
+nav button {display: none;}
+nav ul.hide {display: block;}
+nav ul {margin-left: 2%;}
+nav ul li {float: left; width: auto;}
+nav ul li a{padding: .5rem .6rem; text-align: center; border: none;}
 
 
 /*----------- MAIN --------------*/
-
-
+.cards div {
+    flex-basis: 50%;
+}
+.cards div:nth-child(1) a {
+    background-color: $primary-red;
+}
+.cards div:nth-child(2) a {
+    background-color: $dark-blue;
+}
+.cards div:nth-child(3) a {
+    background-color: $dark-blue;
+}
+.cards div:nth-child(4) a {
+    background-color: $primary-red;
+}
 
 /*----------- FOOTER --------------*/
     
