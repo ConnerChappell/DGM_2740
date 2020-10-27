@@ -719,18 +719,6 @@ footer {
   .cards div {
     flex-basis: 50%; }
 
-  .cards div:nth-child(1) a {
-    background-color: #fb4d42; }
-
-  .cards div:nth-child(2) a {
-    background-color: #091f2f; }
-
-  .cards div:nth-child(3) a {
-    background-color: #091f2f; }
-
-  .cards div:nth-child(4) a {
-    background-color: #fb4d42; }
-
   /*----------- FOOTER --------------*/ }
 /* end of media query */
 @media only screen and (min-width: 64rem) {
@@ -747,18 +735,6 @@ footer {
   /*----------- MAIN --------------*/
   .cards div {
     flex-basis: 25%; }
-
-  .cards div:nth-child(1) a {
-    background-color: #fb4d42; }
-
-  .cards div:nth-child(2) a {
-    background-color: #091f2f; }
-
-  .cards div:nth-child(3) a {
-    background-color: #fb4d42; }
-
-  .cards div:nth-child(4) a {
-    background-color: #091f2f; }
 
   /*----------- FOOTER --------------*/ }
 /* end of media query */
