@@ -87,6 +87,7 @@ picture div {
 .cards div {
     text-align: center;
     flex-basis: 100%;
+    border: 2px solid #fff;
 }
 .cards div:nth-child(1) {
     background-image: url(../images/places_to_stay.jpg);
