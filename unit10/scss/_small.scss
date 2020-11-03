@@ -8,65 +8,100 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
-    font-family: Verdana, sans-serif;
+    font-family: 'Poppins', Verdana, sans-serif;
 }
 
 
 /*----------- HEADER --------------*/
 header {
     padding: .5rem 2%;
-    background-color: #ddd;
+    background-color: #000;
 }
-header h1 {margin: 0;}
+header img {
+    float: left;
+    height: 125px;
+    margin-right: 1rem;
+}
+header h1 {margin: 2.25rem 0 0 0; color: #fff; font-weight: $semibold-font;}
 header h2 {margin: 0; font-weight: normal;}
 
-/*----------- NAVIGATION --------------*/
-nav {
-    background-color: #666;
-}
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-nav ul li {
-    float: left;
-    width: 25%;
-}
-nav ul li a {
-    display: block;
-    background-color: #444;
-    color: #eee;
-    border-left: 1px solid #777;
-    padding: .5rem 0;
-    text-decoration: none;
-    font-size: .9rem;
-    text-align: center;
-}
-nav ul li:first-child a {border-left: none;}
 
-nav ul li a:hover {
-    background-color: #eee;
-    color: #333;
-}
+/*----------- NAVIGATION --------------*/
 nav ul li.active a {
-    background-color: #000;
-    color: #fff;
+    background-color: $primary-gold;
+    color: #000;
 }
+
+
 /*----------- MAIN --------------*/
 main {
     padding: 0 2%;
     min-height: 10rem;
+    z-index: 1;
+}
+main h1 {
+    font-weight: $normal-font;
+}
+
+
+/*----------- FORM --------------*/
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+form legend {
+    color: $primary-gold;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    font-size: .8rem;
+}
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border-radius: 25px;
+    padding: .75rem;
+    border: 1px solid transparent;
+    background-color: rgba($color: #000000, $alpha: 0.1);
+    width: 100%;
+    max-width: 20rem;
+}
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+}
+form input.submitBtn {
+    border: none;
+    background-color: $primary-gold;
+    border-radius: 25px;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    font-size: 1.5rem;
+    font-weight: $semibold-font;
+}
+form label.top input:required {
+    border-left: 6px solid red;
+}
+form label.top input:required:valid {
+    border-left: 6px solid $primary-gold;
 }
 
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #ddd;
+    background-color: #000;
+    color: #fff;
     padding: .5rem 2%;
     text-align: center;
 }
-
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
