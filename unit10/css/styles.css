@@ -350,14 +350,16 @@ main {
   z-index: 1; }
 
 main h1 {
-  font-weight: 400; }
+  font-weight: 400;
+  z-index: 1; }
 
 /*----------- FORM --------------*/
 form fieldset {
   margin: 2rem 0;
   border: 1px solid #666;
   border-radius: 10px;
-  padding: .5rem 2%; }
+  padding: .5rem 2%;
+  z-index: 1; }
 
 form legend {
   color: #c5b358;
@@ -464,6 +466,7 @@ footer {
     background-color: #666;
     margin: 0;
     padding: 0;
+    position: absolute;
     z-index: 998; }
 
   #primaryNav li.current-menu-item a {
