@@ -314,20 +314,44 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+div#pageWrapper {
+  display: grid;
+  grid-template-areas: "hamburger" "header" "content" "footer" "navigation";
+  grid-template-columns: 100%; }
+
 /*----------- BODY --------------*/
 body {
-  font-size: 16px;
-  font-family: Verdana, sans-serif; }
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: #333333; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 500; }
+
+h1 {
+  margin-bottom: 3rem; }
+
+h3 {
+  margin: 0; }
+
+p {
+  margin-top: 0; }
 
 /*----------- HEADER --------------*/
 header {
+  grid-area: header;
   padding: .5rem 2%;
-  background-color: #ffa8f0; }
+  background-color: #f3f3f3; }
   header h1 {
     margin: 0; }
   header h2 {
     margin: 0;
     font-weight: normal; }
+
+header img {
+  width: 200px; }
 
 /*----------- NAVIGATION --------------*/
 a.myjump {
@@ -340,7 +364,9 @@ a.myjump {
   padding-left: 2%; }
 
 nav {
-  background-color: #b68aff; }
+  grid-area: navigation;
+  background-color: #4daaa7;
+  height: 100vh; }
 
 nav ul {
   list-style-type: none;
@@ -363,7 +389,7 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: rgba(255, 255, 255, 0.4);
-  color: #000; }
+  color: #333333; }
 
 nav ul li.active a {
   background-color: rgba(0, 0, 0, 0.6);
@@ -371,25 +397,37 @@ nav ul li.active a {
 
 /*----------- HAMBURGER --------------*/
 div#hamburger {
-  background-color: #feff98; }
+  grid-area: hamburger;
+  background-color: #4daaa7; }
 
 /*----------- MAIN --------------*/
 main {
+  grid-area: content;
   padding: 0 2%;
-  min-height: 10rem;
-  background-color: #b8ddff; }
-  main h1 {
-    margin: 0;
-    padding: 1rem 0 0 0; }
-  main p {
-    margin: 0;
-    padding: .5rem 0; }
+  min-height: 10rem; }
+
+.appleRow, .samsungRow, .microsoftRow {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 1.5rem 0; }
+  .appleRow .column1, .samsungRow .column1, .microsoftRow .column1 {
+    order: 1;
+    padding-bottom: .5rem; }
+  .appleRow .column2, .samsungRow .column2, .microsoftRow .column2 {
+    order: 3; }
+  .appleRow .column3, .samsungRow .column3, .microsoftRow .column3 {
+    order: 2; }
+  .appleRow img, .samsungRow img, .microsoftRow img {
+    width: 100%; }
 
 /*----------- FOOTER --------------*/
 footer {
-  background-color: #b5ff98;
+  grid-area: footer;
+  background-color: #4daaa7;
+  color: #fff;
   padding: .5rem 2%;
-  text-align: center; }
+  text-align: center;
+  border-top: 2px solid #333333; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -398,23 +436,52 @@ footer {
   clear: both; }
 
 @media only screen and (min-width: 35rem) {
+  div#pageWrapper {
+    grid-template-areas: "header header" "navigation content" "footer footer";
+    grid-template-columns: 150px auto;
+    grid-template-columns: auto; }
+
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
-  nav ul {
-    margin-left: 2%; }
+  a.myjump {
+    display: none; }
 
-  nav ul li {
-    flex-basis: 25%; }
-
-  nav ul li a {
-    padding: .5rem 1rem; }
+  nav {
+    height: auto; }
 
   /*----------- MAIN --------------*/
+  .appleRow, .samsungRow, .microsoftRow {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0.7rem; }
+    .appleRow .column1, .samsungRow .column1, .microsoftRow .column1 {
+      order: 1;
+      grid-column: 1 / span 2;
+      grid-row: 1; }
+    .appleRow .column2, .samsungRow .column2, .microsoftRow .column2 {
+      order: 3;
+      grid-column: 1 / span 2; }
+    .appleRow .column3, .samsungRow .column3, .microsoftRow .column3 {
+      order: 2;
+      grid-row: 1 / span 2; }
+
+  .samsungRow .column1 {
+    order: 1;
+    grid-column: 2 / span 2; }
+  .samsungRow .column2 {
+    order: 3;
+    grid-column: 2 / span 2; }
+  .samsungRow .column3 {
+    order: 2;
+    grid-column: 1;
+    grid-row: 1 / span 2; }
+
   /*----------- FOOTER --------------*/ }
 /* end of media query */
 @media only screen and (min-width: 64rem) {
-  header, nav, main, footer, div#hamburger {
+  div#pageWrapper {
+    grid-template-areas: "header" "navigation" "content" "footer";
+    grid-template-columns: auto;
     max-width: 64rem;
     margin: auto; }
 
@@ -423,6 +490,8 @@ footer {
   /*----------- NAVIGATION --------------*/
   nav ul li {
     flex-basis: auto; }
+    nav ul li a {
+      padding: .6rem 1rem; }
 
   /*----------- MAIN --------------*/
   /*----------- FOOTER --------------*/ }

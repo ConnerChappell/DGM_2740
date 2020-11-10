@@ -5,19 +5,50 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 
+div#pageWrapper {
+    display: grid;
+    grid-template-areas: 
+        "hamburger"
+        "header"
+        "content"
+        "footer"
+        "navigation";
+    grid-template-columns: 100%;
+}
+
+
 /*----------- BODY --------------*/
 body {
-    font-size: 16px;
-    font-family: Verdana, sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.5rem;
+    color: $accent-color;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 500;
+}
+h1 {
+    margin-bottom: 3rem;
+}
+h3 {
+    margin: 0;
+}
+p {
+    margin-top: 0;
 }
 
 
 /*----------- HEADER --------------*/
 header {
+    grid-area: header;
     padding: .5rem 2%;
-    background-color: #ffa8f0;
+    background-color: #f3f3f3;
     h1 {margin: 0;}
     h2 {margin: 0; font-weight: normal;}
+}
+header img {
+    width: 200px;
 }
 
 
@@ -34,7 +65,9 @@ a.myjump{
 }
 
 nav {
-    background-color: #b68aff;
+    grid-area: navigation;
+    background-color: $primary-color;
+    height: 100vh;
 }
 nav ul {
     list-style-type: none;
@@ -60,7 +93,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: rgba(255,255,255,0.4);
-    color: #000;
+    color: $accent-color;
 }
 nav ul li.active a {
     background-color: rgba(0,0,0,0.6);
@@ -70,25 +103,41 @@ nav ul li.active a {
 
 /*----------- HAMBURGER --------------*/
 div#hamburger {
-    background-color: #feff98; 
+    grid-area: hamburger;
+    background-color: $primary-color;
 }
 
 
 /*----------- MAIN --------------*/
 main {
+    grid-area: content;
     padding: 0 2%;
     min-height: 10rem;
-    background-color: #b8ddff;
-    h1 {margin: 0; padding: 1rem 0 0 0;}
-    p {margin: 0; padding: .5rem 0;}
+}
+.appleRow, .samsungRow, .microsoftRow {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 1.5rem 0;
+
+  .column1 {
+    order: 1;
+    padding-bottom: .5rem;
+  }
+  .column2 {order: 3;}
+  .column3 {order: 2;}
+
+  img {width: 100%;}
 }
 
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #b5ff98;
+    grid-area: footer;
+    background-color: $primary-color;
+    color: #fff;
     padding: .5rem 2%;
     text-align: center;
+    border-top: 2px solid $accent-color;
 }
 
 
