@@ -438,8 +438,7 @@ footer {
 @media only screen and (min-width: 35rem) {
   div#pageWrapper {
     grid-template-areas: "header header" "navigation content" "footer footer";
-    grid-template-columns: 150px auto;
-    grid-template-columns: auto; }
+    grid-template-columns: 150px auto; }
 
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
