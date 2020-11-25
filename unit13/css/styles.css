@@ -317,20 +317,18 @@ html {
 /*----------- BODY --------------*/
 body {
   font-size: 16px;
-  font-family: Verdana, sans-serif; }
+  font-family: 'Rubik', Verdana, sans-serif; }
 
 /*----------- HEADER --------------*/
 header {
   padding: .5rem 2%;
-  background-color: #ddd; }
+  background-color: #ffff89; }
 
 header h1 {
   margin: 0;
-  text-align: center; }
-
-header h2 {
-  margin: 0;
-  font-weight: normal; }
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 3rem; }
 
 /*----------- NAVIGATION --------------*/
 /*----------- MAIN --------------*/
@@ -338,10 +336,44 @@ main {
   padding: 0 2%;
   min-height: 10rem; }
 
+#place h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 300; }
+
+#weatherForecast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 2%; }
+  #weatherForecast .forecastCard {
+    width: 200px;
+    margin: 2%;
+    border: 2px solid #1a3257;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    text-align: center; }
+    #weatherForecast .forecastCard .dayName {
+      width: 100%;
+      padding: 1.5rem;
+      background-color: #70c3f2;
+      border-top-left-radius: 13px;
+      border-top-right-radius: 13px;
+      border-bottom: 2px solid #1a3257;
+      font-size: 1.5rem;
+      font-weight: 600; }
+    #weatherForecast .forecastCard .dayTemp {
+      padding: .5rem;
+      margin: .5rem;
+      font-size: 2.5rem;
+      font-weight: 300; }
+    #weatherForecast .forecastCard img {
+      width: 40%; }
+
 /*----------- FOOTER --------------*/
 footer {
-  background-color: #ddd;
-  padding: .5rem 2%;
+  background-color: #ffff89;
+  padding: 1rem;
   text-align: center; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -353,6 +385,9 @@ footer {
 @media only screen and (min-width: 35rem) {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
+  header h1 {
+    font-size: 4rem; }
+
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
   /*----------- FOOTER --------------*/ }
