@@ -551,31 +551,31 @@ main {
         font-size: .8rem;
         line-height: 1.25rem; }
 
-.supportGrid {
+.support-section {
   display: block;
   border-top: 1px solid #a8a8b2;
   background-color: #f5f5f5;
   padding: .8rem 2%; }
-  .supportGrid .support img {
+  .support-section .support img {
     width: 100%; }
-  .supportGrid .support h1 {
+  .support-section .support h1 {
     color: #0480b1;
     margin: .8rem 0 .4rem 0;
     font-size: 1.5rem; }
-  .supportGrid .support p {
+  .support-section .support p {
     color: #a8a8b2;
     padding: 0;
     margin: 0;
     font-size: .8rem;
     line-height: 1.25rem; }
-  .supportGrid #pricing {
+  .support-section #pricing {
     margin: 0;
     text-align: center;
     background-color: #fff; }
-    .supportGrid #pricing img {
+    .support-section #pricing img {
       padding: 0;
       margin: 0; }
-    .supportGrid #pricing button {
+    .support-section #pricing button {
       /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0480b1+0,013e62+100 */
       background: #0480b1;
       /* Old browsers */
@@ -593,12 +593,12 @@ main {
       padding: .8rem 3%;
       width: 75%;
       font-size: 1.3rem; }
-    .supportGrid #pricing button:hover {
+    .support-section #pricing button:hover {
       background: #fff;
       color: #0480b1;
       border: 2px solid #0480b1;
       cursor: pointer; }
-    .supportGrid #pricing p {
+    .support-section #pricing p {
       padding: .5rem 2%; }
 
 .ads {
@@ -711,24 +711,24 @@ footer {
         margin: 0 auto; }
 
   /*-------- Support Section --------*/
-  .supportGrid {
+  .support-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 1%;
     padding: .8rem 0;
     width: 90%;
     margin: 0 auto; }
-    .supportGrid #infrastructure {
+    .support-section #infrastructure {
       grid-column: 1; }
-    .supportGrid #technology {
+    .support-section #technology {
       grid-column: 2; }
-    .supportGrid #pricing {
+    .support-section #pricing {
       grid-column: 3;
       grid-row: 1/span 2; }
-      .supportGrid #pricing button {
+      .support-section #pricing button {
         border-radius: 15px;
         width: 85%; }
-    .supportGrid #live {
+    .support-section #live {
       grid-column: 1/span 2;
       grid-row: 2; }
 
@@ -773,28 +773,28 @@ footer {
           font-size: .8rem; }
 
   /*-------- Support Section --------*/
-  .supportGrid {
+  .support-section {
     width: 100%; }
-    .supportGrid .support {
+    .support-section .support {
       width: 100%; }
-      .supportGrid .support img {
+      .support-section .support img {
         width: 100%; }
-      .supportGrid .support h1 {
+      .support-section .support h1 {
         color: #0480b1;
         margin: .8rem 0 .4rem 0;
         font-size: 1.5rem; }
-      .supportGrid .support p {
+      .support-section .support p {
         color: #a8a8b2;
         padding: 0;
         margin: 0;
         font-size: .8rem; }
-    .supportGrid #pricing {
+    .support-section #pricing {
       margin: 0;
       text-align: center; }
-      .supportGrid #pricing img {
+      .support-section #pricing img {
         padding: 0;
         margin: 0; }
-      .supportGrid #pricing button {
+      .support-section #pricing button {
         background-color: #0480b1;
         color: #fff;
         border: none;
@@ -802,7 +802,7 @@ footer {
         padding: .8rem 3%;
         width: 75%;
         font-size: 1.3rem; }
-      .supportGrid #pricing p {
+      .support-section #pricing p {
         padding: .5rem 2%; }
 
   /*-------- ADS --------*/
