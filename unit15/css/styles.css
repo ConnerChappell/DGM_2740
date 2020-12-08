@@ -564,7 +564,7 @@ main {
     font-size: 1.5rem; }
   .support-section .support p {
     color: #a8a8b2;
-    padding: 0;
+    padding: 0 0 1rem 0;
     margin: 0;
     font-size: .8rem;
     line-height: 1.25rem; }
