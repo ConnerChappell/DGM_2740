@@ -1,0 +1,113 @@
+header, nav, .hero, .expect, main, footer {
+    max-width: 74rem;
+    margin: 0 auto;
+}
+
+/*-------- MAIN --------*/
+.expect {
+    width: 100%;
+
+    .best {
+        padding: 0;
+    }
+    .formula {
+        padding: 0;
+
+        i {padding-right: .3rem;}
+    }
+}
+
+
+/*-------- More About Us Section --------*/
+.more-about-us {
+    padding: 3% 0;
+    width: 100%;
+
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 1%;
+        padding: .8rem 0;
+
+        .our {
+            width: 100%;
+            
+            img {width: 100%;}
+            h1 {
+                color: $primary-blue; 
+                margin: .8rem 0 .4rem 0; 
+                font-size: 1.5rem;
+            }
+            p {
+                color: $primary-grey;
+                padding: 0;
+                margin: 0;
+                font-size: .8rem;
+            }
+        }
+    } 
+}
+
+/*-------- Support Section --------*/
+.supportGrid {
+    width: 100%;
+
+    .support {
+        width: 100%;
+
+        img {width: 100%;}
+        h1 {
+            color: $primary-blue; 
+            margin: .8rem 0 .4rem 0; 
+            font-size: 1.5rem;
+        }
+        p {
+            color: $primary-grey;
+            padding: 0;
+            margin: 0;
+            font-size: .8rem;
+        }
+    }
+    #pricing {
+        margin: 0;
+        text-align: center;
+
+
+        img {
+            padding: 0;
+            margin: 0;
+        }
+        button {
+            background-color: $primary-blue;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            padding: .8rem 3%;
+            width: 75%;
+            font-size: 1.3rem;
+         }
+         p{padding: .5rem 2%;}
+    }
+}
+
+
+/*-------- ADS --------*/
+.ads{
+    margin: 0;
+    padding: 2rem 0;
+
+    .advertising {
+        grid-template-columns: repeat(6,1fr);
+        grid-column-gap: 2%;
+        width: 100%;
+
+        .ad {width: 100%;}
+    }
+}
+
+
+/*-------- FOOTER --------*/
+footer {
+    text-align: left;
+    padding: .23rem 0;
+}
